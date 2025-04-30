@@ -11,6 +11,10 @@ import "fmt"
 
 func main() {
 
+	const zollProMeter = 39.37007874
+	const meterProSeemeile = 1852.0
+	const meterProLichtjahr = 9.4607304725808e15
+
 	var meter int
 	var mm float64
 	var km float64
@@ -23,9 +27,9 @@ func main() {
 
 	mm = float64(meter) * 1000
 	km = float64(meter) / 1000
-	zoll = float64(meter) * 39.37
-	sm = float64(meter) / 1852
-	lj = float64(meter) / 9.461e+15
+	zoll = float64(meter) * zollProMeter
+	sm = float64(meter) / meterProSeemeile
+	lj = float64(meter) / meterProLichtjahr
 
 	fmt.Println(meter, "Meter entsprechen:")
 	fmt.Println(mm, "mm")
