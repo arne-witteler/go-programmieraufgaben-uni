@@ -35,6 +35,7 @@ func main() {
 		raumdiagonale = math.Sqrt(math.Pow(laenge, 2) + math.Pow(breite, 2) + math.Pow(hoehe, 2))
 		umkugelradius = (raumdiagonale) / 2 
 
+		fmt.Println()
 		fmt.Println("Ein", laenge, "×", breite, "×", hoehe, "Quader hat die geometrischen Größen: ")
 		fmt.Println("Volumen:", volumen)
 		fmt.Println("Kantensumme:", kantensumme)
